@@ -1,0 +1,23 @@
+{
+  "name": "tech_proof_webhook",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Antonio Hernandez",
+  "license": "ISC",
+  "dependencies": {
+    "@aws-sdk/client-kendra": "^3.282.0",
+    "@microsoft/fetch-event-source": "^2.0.1",
+    "aws-sdk": "^2.1328.0",
+    "aws-sdk-js-codemod": "^0.14.1",
+    "debug": "^4.3.4",
+    "dotenv-flow": "^3.2.0",
+    "lambda-local": "^2.0.3",
+    "node-modules": "^0.0.1",
+    "openai": "^3.2.1",
+    "serverless": "^3.28.1"
+  }
+}

@@ -1,0 +1,17 @@
+service: chat-gpt-demo-webhook
+provider:
+  name: aws
+  runtime: nodejs16.x
+  stage: dev
+  region: us-east-1
+  timeout: 15
+  environment:
+    #CLOUD_SEARCH_HANDLER: "RUTACLOUDSEARCH"
+    CHATGPT_APIKEY: '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'
+    CHATGPT_ENDPOINT: 'https://api.openai.com/v1/engines/davinci-codex/completions'
+    CHATGPT_MODEL: 'text-davinci-003'
+functions:
+  app:
+    handler: index.handler
+    events:
+      - http: POST /webhook
